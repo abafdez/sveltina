@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Counter from './Counter.svelte';
+
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Svelte+TinaCMS</title>
+	<meta name="description" content="Svelte + TinaCMS" />
 </svelte:head>
 
 <section>
@@ -13,14 +13,9 @@
 			<enhanced:img class="welcome-image" src="#lib/images/svelte-welcome.png" alt="Welcome" />
 		</span>
 
-		to your new<br />SvelteKit app
+		To the Sveltekit3 and TinaCMS Test
 	</h1>
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
 </section>
 
 <style>

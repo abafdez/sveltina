@@ -15,7 +15,7 @@
 
 	<footer>
 		<p>
-			visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to learn about SvelteKit
+			visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to learn about SvelteKit and <a href="https://tina.io/">tina.io</a> to learn about TinaCMS
 		</p>
 	</footer>
 </div>
