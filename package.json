@@ -34,11 +34,12 @@
 		"svelte-check": "^4.7.6",
 		"typescript": "^6.0.3",
 		"typescript-eslint": "^8.71.1",
-		"vite": "^8.3.3"
+		"vite": "^8.3.4"
 	},
 	"imports": {
 		"#lib": "./src/lib/index.js",
-		"#lib/*": "./src/lib/*"
+		"#lib/*": "./src/lib/*",
+		"#tina/*": "./tina/*"
 	},
 	"dependencies": {
 		"react": "19.3.0",

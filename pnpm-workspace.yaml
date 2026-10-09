@@ -3,3 +3,5 @@ allowBuilds:
   esbuild: true
   better-sqlite3: true
   core-js: true
+minimumReleaseAgeExclude:
+  - '@posthog/types@1.415.2'
