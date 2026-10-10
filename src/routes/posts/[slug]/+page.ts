@@ -1,15 +1,16 @@
 import { error } from '@sveltejs/kit';
+import client from '#tina/__generated__/client.ts';
 
 export async function load({ params }) {
 	try {
-		// Import the markdown file - mdsvex will parse it
-		const post = await import(`/content/posts/${params.slug}.md`);
-
+		const post = await client.queries.post({ relativePath: `${params.slug}.md` });
+		console.log(post.data);
 		return {
-			metadata: post.metadata,
-			content: post.default
+			title: post.data.post.title,
+			body: post.data.post.body
 		};
 	} catch (err) {
+		console.log(err);
 		throw error(404, `Post "${params.slug}" not found`);
 	}
 }

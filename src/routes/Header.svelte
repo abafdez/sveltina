@@ -29,8 +29,8 @@
 			<li aria-current={page.url.pathname === '/posts' ? 'page' : undefined}>
 				<a href={resolve('/posts')}>Posts</a>
 			</li>
-			<li aria-current={page.url.pathname === '/admin' ? 'page' : undefined}>
-				<a href='/admin'>Admin</a>
+			<li aria-current={page.url.pathname === '/admin/index.html' ? 'page' : undefined}>
+				<a href='/admin/index.html'>Admin</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">

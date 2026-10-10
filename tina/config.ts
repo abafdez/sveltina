@@ -46,6 +46,45 @@ export default defineConfig({
 						name: 'body',
 						label: 'Body',
 						isBody: true
+					},
+					{
+						name: 'blocks',
+						label: 'Blocks',
+						type: 'object',
+						list: true,
+						templates: [
+							{
+								name: 'WelcomeHero',
+								label: 'Welcome Hero',
+								fields: [
+									{
+										name: 'message',
+										type: 'rich-text'
+									},
+									{
+										name: 'links',
+										label: 'Links',
+										type: 'object',
+										list: true,
+										fields: [
+											{
+												type: 'string',
+												name: 'link'
+											},
+											{
+												type: 'string',
+												name: 'label'
+											},
+											{
+												type: 'string',
+												name: 'style',
+												options: ['simple', 'button']
+											}
+										]
+									}
+								]
+							}
+						]
 					}
 				]
 			}
