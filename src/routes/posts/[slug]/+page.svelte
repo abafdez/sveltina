@@ -1,22 +1,18 @@
-<script>
-	let { data } = $props();
-	console.log(data.body)
+<script lang="ts">
+  import TinaMarkdown from '@tinacms/sveltekit/TinaMarkdown.svelte';
+
+
+
+  let { data } = $props();
 </script>
 
 <article>
-	<header>
-		<h1>{data.title || 'Untitled'}</h1>
-		<!-- {#if data.post.data.post.date}
-			<time datetime={new Date(data.metadata.date).toISOString()}>
-				{new Date(data.metadata.date).toLocaleDateString()}
-			</time>
-		{/if} -->
-	</header>
-
-	<!-- mdsvex renders the markdown as a Svelte component here -->
-	{data.body}
+  <!-- data-tina-field highlights the field when clicked inside visual editing -->
+  <h1 >
+    {data.title}
+  </h1>
+  <!-- Rich-text body rendered via Svelte 5 TinaMarkdown -->
+    <TinaMarkdown
+      content={data.body}
+    />
 </article>
-
-<style>
-
-</style>

@@ -42,6 +42,7 @@
 		"#tina/*": "./tina/*"
 	},
 	"dependencies": {
+		"@tinacms/sveltekit": "link:/home/srgd/code/tinacms/packages/@tinacms/sveltekit",
 		"react": "19.3.0",
 		"react-dom": "19.3.0",
 		"tinacms": "3.14.3"

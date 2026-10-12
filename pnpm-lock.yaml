@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@tinacms/sveltekit':
+        specifier: link:/home/srgd/code/tinacms/packages/@tinacms/sveltekit
+        version: link:../tinacms/packages/@tinacms/sveltekit
       react:
         specifier: 19.3.0
         version: 19.3.0
